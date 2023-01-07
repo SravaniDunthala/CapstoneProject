@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="hedding">
+        Customer List
+    </div>
+
+    <table class="table table-bordered border-primary" *ngIf="">
+        <thead>
+          <tr>
+            <th scope="col">S.No.</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Email Id</th>
+            <th scope="col">Mobile No.</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let customer of customerList">
+            <th scope="row">{{customer.id}}</th>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.gender}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.mobileNo}}</td>
+            <td>{{customer.address}} {{customer.city}}{{customer.state}} {{customer.pincode}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

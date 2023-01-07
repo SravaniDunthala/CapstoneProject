@@ -1,0 +1,23 @@
+ul>li {
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li:active {
+    color: #0000ff;
+}
+
+a:hover {
+    color: #008000;
+}
+
+.main {
+    display: flex;
+}
